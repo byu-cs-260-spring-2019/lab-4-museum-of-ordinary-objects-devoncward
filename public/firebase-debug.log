@@ -1,0 +1,39 @@
+[debug] [2019-06-06T18:56:45.092Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T18:56:45.094Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T18:56:45.094Z] CLI Version:   6.7.2
+[debug] [2019-06-06T18:56:45.094Z] Platform:      linux
+[debug] [2019-06-06T18:56:45.094Z] Node Version:  v8.10.0
+[debug] [2019-06-06T18:56:45.094Z] Time:          Thu Jun 06 2019 12:56:45 GMT-0600 (MDT)
+[debug] [2019-06-06T18:56:45.094Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T18:56:45.100Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T18:56:45.100Z] > authorizing via signed-in user
+[debug] [2019-06-06T18:56:45.100Z] [iam] checking project cs260lab2devoncward for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T18:56:45.101Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-06T18:56:45.101Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-06T18:56:45.308Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T18:56:45.322Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260lab2devoncward:testIamPermissions  
+
+[debug] [2019-06-06T18:56:46.037Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T18:56:46.040Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260lab2devoncward  
+ 
+[debug] [2019-06-06T18:56:46.446Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/devon/Programming/CS260/labs/lab4'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-06T18:56:46.792Z] Fetching environment
+[debug] [2019-06-06T18:56:46.793Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/717308727387:getServerAppConfig  
+ 
+[debug] [2019-06-06T18:56:46.793Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/717308727387/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T18:56:46.994Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T18:56:46.996Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-06T18:56:47.368Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-06T18:56:48.035Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/cs260lab2devoncward/us-central1/app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260lab2devoncward/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260lab2devoncward/us-central1/app for local Function app
