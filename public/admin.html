@@ -43,12 +43,13 @@
           </div>
         </div>
         <div class="upload" v-if="findItem">
-          <input v-model="findItem.title">
+          <input v-model="findItem.title" placeholder="new title">
           <p></p>
           <img :src="findItem.path" />
         </div>
         <div class="actions" v-if="findItem">
           <button @click="deleteItem(findItem)">Delete</button>
+          <button @click="editItem(findItem)">Edit</button>
         </div>
       </div>
   </div>
