@@ -80,8 +80,8 @@ app.put('/api/items/:id', async (req, res) => {
       return;
     } else {
       let newObj = {
-        title: req.body.title
-        
+        title: req.body.title,
+        path: req.body.path,
       }
       console.log("We made it to herer");
       documentToEdit.set(newObj);

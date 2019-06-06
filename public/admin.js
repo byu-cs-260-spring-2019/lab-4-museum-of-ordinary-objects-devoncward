@@ -61,6 +61,7 @@ var app = new Vue({
       try {
         let response = await axios.put("/api/items/" + item.id, {
           title: this.findItem.title,
+          path: this.findItem.path,
         });
         this.findItem = null;
         this.getItems();
