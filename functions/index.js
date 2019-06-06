@@ -30,7 +30,8 @@ app.post('/api/items', async (req, res) => {
     let item = {
       id: numRecords + 1,
       title: req.body.title,
-      path: req.body.path
+      path: req.body.path,
+      description: req.body.description
     };
     console.log("idem: ", item);
     itemsRef.doc(item.id.toString()).set(item);
@@ -82,6 +83,7 @@ app.put('/api/items/:id', async (req, res) => {
       let newObj = {
         title: req.body.title,
         path: req.body.path,
+        description: req.body.description,
       }
       console.log("We made it to herer");
       documentToEdit.set(newObj);
