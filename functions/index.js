@@ -22,6 +22,7 @@ app.post('/api/items', async (req, res) => {
             title: req.body.title,
             path: req.body.path
         };
+        console.log("idem: ", item);
         itemsRef.doc(item.id.toString()).set(item);
         res.send(item);
       } catch (error) {

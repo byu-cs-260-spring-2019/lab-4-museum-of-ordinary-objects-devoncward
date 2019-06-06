@@ -5,14 +5,14 @@ var app = new Vue({
     selected:  "",
     addItem: null,
     photos: [
-      {name: 'baseball', id: 1, path: 'ball.jpg'},
-      {name: 'car', id: 2, path: 'car.jpg'},
-      {name: 'glasses', id: 3, path: 'glasses.jpg'},
-      {name: 'paintbrush', id: 4, path: 'Brush.jpg'},
-      {name: 'pen', id: 5, path: 'pen.jpg'},
-      {name: 'scissors', id: 6, path: 'scissors.jpg'},
-      {name: 'shovel', id: 7, path: 'shovel.jpg'},
-      {name: 'slinky', id: 8, path: 'slinke.jpg'},
+      {name: 'baseball', id: 1, path: './images/ball.jpg'},
+      {name: 'car', id: 2, path: './images/car.jpg'},
+      {name: 'glasses', id: 3, path: './images/glasses.jpg'},
+      {name: 'paintbrush', id: 4, path: './images/Brush.jpg'},
+      {name: 'pen', id: 5, path: './images/pen.jpg'},
+      {name: 'scissors', id: 6, path: './images/scissors.jpg'},
+      {name: 'shovel', id: 7, path: './images/shovel.jpg'},
+      {name: 'slinky', id: 8, path: './images/slinke.jpg'},
     ],
   },
   methods: {
@@ -25,6 +25,7 @@ var app = new Vue({
         this.addItem = result.data;
       } catch (error) {
         console.log(error);
+        console.log("Here is where I broke");
       }
     }
   },

@@ -20,7 +20,7 @@
         <p></p>
         <select v-model="selected">
           <option disabled value="">Please select one to add</option>
-          <option v-for="photo in photos" :key="photo.id">{{photo.name}}</option>
+          <option v-for="photo in photos" :key="photo.id" :value="photo">{{photo.name}}</option>
         </select>
         <button @click="addNewItem">Add Item</button>
       </div>
